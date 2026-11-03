@@ -29,5 +29,5 @@ Use this structure for the completed investigation. Include a section for each a
 - [Risk and its likely impact]
 
 ## Handoff
-[Recommend the next focused investigation or, when material uncertainties are resolved, moving to requirements/specification.]
+[Recommend another focused investigation or, when material uncertainties are resolved, using `specify` to create the Product Specification.]
 ```

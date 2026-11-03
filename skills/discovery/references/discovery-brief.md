@@ -45,5 +45,5 @@ Use this structure for the completed discovery brief. Omit a section only when i
 - [Risk — potential impact or mitigation to explore]
 
 ## Handoff
-[Suggested next step: use the `deep-dive` skill for the recommended investigations; then move to requirements/specification when material uncertainties are resolved. Do not create implementation tickets here.]
+[Suggested next step: use the `deep-dive` skill for the recommended investigations. When material uncertainties are resolved—or there are no deep dives needed—use `specify` to create the Product Specification. Do not create implementation tickets here.]
 ```

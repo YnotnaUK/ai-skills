@@ -5,7 +5,7 @@ description: Investigates material product or project uncertainties identified d
 
 # Investigate consequential uncertainties
 
-Resolve the specific uncertainties that could materially affect an idea's solution, scope, risk, or feasibility. This is a focused investigation stage between high-level discovery and requirements/specification; do not broaden it into general discovery or invent a need to investigate.
+Resolve the specific uncertainties that could materially affect an idea's solution, scope, risk, or feasibility. This is a focused investigation stage between high-level discovery and product specification; do not broaden it into general discovery or invent a need to investigate.
 
 ## Find an investigation
 
@@ -43,4 +43,4 @@ Keep rounds concise and group independent questions across areas when practical.
 
 Once investigation is complete, give a concise recap of the findings and their implications. Ask the user to confirm the shared understanding before presenting the final hand-off; incorporate corrections.
 
-After confirmation, read [references/deep-dive-report.md](references/deep-dive-report.md) and use it to return the results in the conversation as Markdown. Do not create or edit files, update the discovery brief, generate a production specification, or create tasks unless the user asks.
+After confirmation, read [references/deep-dive-report.md](references/deep-dive-report.md) and use it to return the results in the conversation as Markdown. Do not create or edit files, update the discovery brief, generate a product specification, or create tasks unless the user asks.
