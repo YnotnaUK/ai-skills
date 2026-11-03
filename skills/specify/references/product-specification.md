@@ -62,5 +62,5 @@ Use this structure for the completed specification. Omit a section only when it 
 - [How the intended outcome and key requirements will be checked]
 
 ## Handoff
-[Review/approval needed, then task planning or breakdown. Do not put implementation tasks here.]
+[Review and approve this specification, then use `plan-tasks` to create the implementation breakdown. Do not put implementation tasks here.]
 ```

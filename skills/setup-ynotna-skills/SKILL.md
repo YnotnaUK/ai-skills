@@ -25,11 +25,11 @@ Ask for any preferences that are not already established by existing guidance. T
 * **Task destination:** local Markdown, GitHub Issues, or Jira as the default. Record relevant non-secret identifiers only when useful and verified or user-provided. Do not store credentials.
 * **External actions:** whether to ask before creating or modifying GitHub/Jira issues. Recommend explicit confirmation before external side effects.
 
-If a choice is declined or left undecided, record it as “ask each time”; do not invent a repository preference. The user may select only one default task destination; other supported services can remain available as alternatives.
+If a choice is declined or left undecided, record it as “ask each time”; do not invent a repository preference. The user may select only one default task destination; other supported services can remain available as alternatives. The `plan-tasks` skill should present a task plan for review before publishing it.
 
 ## Prepare and apply changes safely
 
-1. Read [references/repository-guidance.md](references/repository-guidance.md) for the guidance section format.
+1. Read [the repository guidance reference](./references/repository-guidance.md) for the guidance section format.
 2. Prepare a concise change plan. In the canonical instruction file, preserve existing content and add or update only the clearly marked Ynotna skills preferences section. If no canonical file exists, create it. If existing content conflicts, markers are malformed, or updating would require replacing user-authored text, show the conflict and ask before proceeding.
 3. Create the second entry point as a relative symlink to the canonical file only if it does not already contain distinct user-authored content and symlink creation is supported. Never replace an existing file or link without explicit approval. If symlinks are unsupported or unsuitable, explain the options and ask whether to keep one file or create a labelled copy that may drift.
 4. If `.github/copilot-instructions.md` or nested agent guidance would duplicate or conflict with the new root guidance, explain the overlap and ask before changing it. Do not create both competing Copilot instruction mechanisms automatically.

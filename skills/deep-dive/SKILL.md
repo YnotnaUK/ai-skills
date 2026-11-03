@@ -43,4 +43,4 @@ Keep rounds concise and group independent questions across areas when practical.
 
 Once investigation is complete, give a concise recap of the findings and their implications. Ask the user to confirm the shared understanding before presenting the final hand-off; incorporate corrections.
 
-After confirmation, read [references/deep-dive-report.md](references/deep-dive-report.md) and use it to deliver the findings. Follow any repository artefact policy and output path in the active repository's root agent instructions; if no clear policy is present, return the report in chat and do not create or update files unless asked. Do not generate a product specification or create tasks here.
+After confirmation, read [the deep-dive report template](./references/deep-dive-report.md) and use it to deliver the findings. Follow any repository artefact policy and output path in the active repository's root agent instructions; if no clear policy is present, return the report in chat and do not create or update files unless asked. Do not generate a product specification or create tasks here.

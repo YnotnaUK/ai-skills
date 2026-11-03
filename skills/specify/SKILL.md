@@ -36,6 +36,6 @@ Be concise and use consistent requirement identifiers within the document. Avoid
 
 ## Completion
 
-After confirmation, read [references/product-specification.md](references/product-specification.md) and use its template to deliver the Product Specification. Follow any repository artefact policy and output path in the active repository's root agent instructions; if no clear policy is present, return it in chat and do not create or update files unless asked. Mark it **Provisional** if material decisions remain unresolved; otherwise mark it **Ready for review**. Never imply approval or implementation readiness that the user has not given.
+After confirmation, read [the Product Specification template](./references/product-specification.md) and use it to deliver the document. Follow any repository artefact policy and output path in the active repository's root agent instructions; if no clear policy is present, return it in chat and do not create or update files unless asked. Mark it **Provisional** if material decisions remain unresolved; otherwise mark it **Ready for review**. Never imply approval or implementation readiness that the user has not given.
 
-Do not produce implementation tickets or a task breakdown unless the user asks. The next step after an agreed specification is task planning or breakdown.
+Do not produce implementation tickets or a task breakdown here. The next step after the specification is agreed is `plan-tasks`.
