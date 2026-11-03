@@ -1,11 +1,11 @@
 ---
 name: setup-ynotna-skills
-description: Configures a repository for Ynotna's product-planning skills by agreeing on agent instruction files, artefact defaults and locations, and task destinations. Use when onboarding a repo or setting its Shape, Discovery, Deep Dive, Specify, and task-workflow preferences.
+description: Configures a repository for Ynotna's product-planning skills by agreeing on agent instruction files, artefact defaults, task destinations, and verifying available GitHub or Jira access. Use when onboarding a repo or setting its planning workflow preferences.
 ---
 
 # Configure a repository for Ynotna's skills
 
-Set up the active repository so project-planning skills can follow its conventions. This skill configures repository guidance; it does not install or copy the skills, create tickets, or test external-service authentication.
+Set up the active repository so project-planning skills can follow its conventions. This skill configures repository guidance and can verify task-service access with read-only checks; it does not install or copy the skills, create tickets, configure integrations, or handle credentials.
 
 ## Inspect before asking or editing
 
@@ -27,6 +27,18 @@ Ask for any preferences that are not already established by existing guidance. T
 
 If a choice is declined or left undecided, record it as “ask each time”; do not invent a repository preference. The user may select only one default task destination; other supported services can remain available as alternatives. The `plan-tasks` skill should present a task plan for review before publishing it.
 
+## Verify task-service access
+
+After the user chooses a default task destination, offer to verify access to that service. Ask before running checks that contact an external service. Checks must be read-only and limited to the selected service and target repository/project.
+
+* **Local Markdown:** Confirm the configured task path is usable by inspecting the repository. Do not create a test task or file.
+* **GitHub Issues:** Check whether `gh` is available and whether `gh auth status` reports an authenticated GitHub host. If the target repository is known, use a read-only repository query to confirm it is accessible. If `gh` is unavailable or unauthenticated, check whether appropriate GitHub MCP tools are available in the current session and, with permission, use a read-only query instead.
+* **Jira:** Check whether Jira MCP tools are available in the current session. With permission, use an available read-only operation to confirm access to the user-selected Jira site/project. If no suitable tool or read-only check is available, report that access could not be verified; do not guess an endpoint or try another authentication method.
+
+Report tool availability, authentication status, and target access as separate results. Never print or store tokens, passwords, or other credentials; do not copy account details into repository guidance. Do not install tools, change authentication, request secrets, create tickets, or modify service settings. If access is missing, explain what the user needs to configure and leave the chosen backend unchanged unless they ask to switch.
+
+Verification is only evidence for the current environment and session; do not persist a claim that access is available in repository instructions. Recheck when a later skill is about to publish tasks.
+
 ## Prepare and apply changes safely
 
 1. Read [the repository guidance reference](./references/repository-guidance.md) for the guidance section format.
@@ -37,4 +49,4 @@ If a choice is declined or left undecided, record it as “ask each time”; do 
 
 ## Verify and report
 
-Verify the canonical guidance, managed section, and any symlink target. If available, check the diff for whitespace problems. Report the chosen policies, files changed, unresolved conflicts, and manual steps. Do not claim a link or integration works unless verified.
+Verify the canonical guidance, managed section, and any symlink target. If available, check the diff for whitespace problems. Report the chosen policies, files changed, task-service access-check results (or that the user declined), unresolved conflicts, and manual steps. Do not claim a link or integration works unless verified.
