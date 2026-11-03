@@ -25,7 +25,9 @@ Work through these gates in order. A gate is complete when its answer is clear e
 3. **Boundaries:** Identify at least two must-haves and one explicit out-of-scope item. Ask for each separately; do not fill gaps with assumptions.
 4. **Success:** Define one observable result that would show the idea is working.
 
-Do not present the finished charter until all four gates are clear. Once they are, read [references/product-charter.md](references/product-charter.md), then use its template to provide the charter in the conversation so the user can carry it into the `discovery` skill. Do not create a file unless asked.
+Do not present the finished charter until all four gates are clear. Once they are, read [references/product-charter.md](references/product-charter.md), then use its template to deliver the charter so the user can carry it into the `discovery` skill.
+
+Before delivery, follow any repository artefact policy and output path in the active repository's root agent instructions. If no clear policy is present, return the charter in chat and do not create or update files unless asked.
 
 ## Opening
 
