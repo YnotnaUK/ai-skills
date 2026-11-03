@@ -37,3 +37,5 @@ For GitHub Issues or Jira:
 * Report links/identifiers for created records, and clearly distinguish any failures or skipped tasks.
 
 After review, use [the task plan template](./references/task-plan.md) to return the plan in chat or to structure local task files as appropriate. Do not create tasks until the user has approved the proposed set.
+
+After implementation, recommend `review-task` to assess the delivered work against the task and its acceptance criteria before user acceptance.

@@ -12,6 +12,14 @@ Select the skills and agents to install for, then invoke `setup-ynotna-skills`
 in your agent to configure repository preferences. Installation does not run
 setup automatically.
 
+## Workflow
+
+Shape (optional) → Discovery → Deep Dive (if needed) → Specify → Plan Tasks.
+After implementation, use `review-task` to check the work against the task's
+acceptance criteria and linked requirements before accepting or requesting rework.
+Reviews are read-only and returned in chat by default; they do not automatically
+fix work or close tickets.
+
 ## Test installation with Docker
 
 Build an isolated Node.js and Git environment:
@@ -34,7 +42,7 @@ run the automated installation check:
 docker run --rm ai-skills-test bash /opt/skills-smoke-test.sh
 ```
 
-The check lists the published skills, installs all six for Claude Code, and
+The check lists the published skills, installs all seven for Claude Code, and
 verifies their instruction files and reference templates. It downloads from
 GitHub, so local changes must be pushed before they can be tested this way.
 
