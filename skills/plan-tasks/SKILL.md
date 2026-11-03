@@ -12,7 +12,7 @@ Turn an agreed Product Specification into a coherent, appropriately sized set of
 1. Prefer an approved Product Specification in the conversation, then a clearly relevant specification in the repository, then a specific task-planning prompt. A **Ready for review** specification is not approved unless the user explicitly asks to plan tasks from it.
 2. Do not treat a provisional specification as approved. You may draft a provisional task plan if asked, but identify blockers and do not publish tasks that depend on unresolved decisions.
 3. If there is no suitable specification and the prompt does not define a bounded change, recommend `specify` and stop. If material product questions remain, recommend resolving them with `deep-dive` or `discovery` first.
-4. Read the active repository's root agent instructions for task destination, task-file location, and external-action policy. Use the user's explicit request when no preference is configured; otherwise ask which destination to use.
+4. Read the active repository's root agent instructions for task destination, task-file location, and external-action policy. If no local Markdown path is configured, inspect the repository and recommend its established task location; if none exists, suggest `docs/tasks/` and ask the user to confirm or change it. Use the user's explicit request when no task destination is configured; otherwise ask which destination to use.
 5. Inspect existing tasks/issues and project conventions when accessible to avoid duplicate work and match local terminology. Do not infer repository or Jira identifiers from unrelated context.
 
 ## Build the task plan

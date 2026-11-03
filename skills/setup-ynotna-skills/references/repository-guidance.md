@@ -1,14 +1,14 @@
 # Repository guidance section
 
-Use the following managed section in the selected canonical agent-instructions file. Replace bracketed values with the user's agreed preferences. Keep other instructions in the file intact.
+Use the following managed section in the selected canonical agent-instructions file. Replace bracketed values with the user's agreed preferences. When the repository has no established convention, recommend `docs/product/` for product documents and `docs/tasks/` for local Markdown task plans; record these values only after the user agrees. Keep other instructions in the file intact.
 
 ```markdown
 <!-- ynotna-skills:begin -->
 ## Ynotna skills preferences
 
 - **Deliverables:** [Create/update repository files by default / Return in chat by default / Ask each time]
-- **Product documents:** [Repository-relative path / Ask each time]
-- **Local Markdown tasks:** [Repository-relative path / Not used / Ask each time]
+- **Product documents:** [Agreed repository-relative path, recommend `docs/product/` / Ask each time]
+- **Local Markdown tasks:** [Agreed repository-relative path, recommend `docs/tasks/` / Not used / Ask each time]
 - **Default task destination:** [Local Markdown / GitHub Issues / Jira / Ask each time]
 - **External issue actions:** [Ask for confirmation / Follow existing project policy / Ask each time]
 - **Service identifiers:** [Non-secret repository, organisation, Jira site, or project identifiers if verified or supplied; omit otherwise]

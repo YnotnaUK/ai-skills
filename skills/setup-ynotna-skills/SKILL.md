@@ -21,11 +21,11 @@ Ask the user to choose the canonical instruction file for this repository: `AGEN
 Ask for any preferences that are not already established by existing guidance. These are independent choices and may be asked together:
 
 * **Generated artefacts:** create or update repository files by default, or return deliverables in chat by default.
-* **Output locations:** where product documents and, if applicable, local Markdown tasks should go. Inspect existing conventions and recommend them rather than creating duplicate directories.
+* **Output locations:** inspect existing documentation and task conventions first. If none are established, recommend `docs/product/` for product charters, discovery briefs, deep-dive reports, and specifications, and `docs/tasks/` for local Markdown task plans. Ask the user to accept or change these suggested paths; do not make them choose paths from scratch.
 * **Task destination:** local Markdown, GitHub Issues, or Jira as the default. Record relevant non-secret identifiers only when useful and verified or user-provided. Do not store credentials.
 * **External actions:** whether to ask before creating or modifying GitHub/Jira issues. Recommend explicit confirmation before external side effects.
 
-If a choice is declined or left undecided, record it as “ask each time”; do not invent a repository preference. The user may select only one default task destination; other supported services can remain available as alternatives. The `plan-tasks` skill should present a task plan for review before publishing it.
+Present sensible defaults and ask the user to accept or adjust them, rather than asking open-ended setup questions. If a preference is declined or left undecided, record it as “ask each time”; do not assume the recommendation was accepted. The user may select only one default task destination; other supported services can remain available as alternatives. The `plan-tasks` skill should present a task plan for review before publishing it.
 
 ## Verify task-service access
 
