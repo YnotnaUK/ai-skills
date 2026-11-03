@@ -25,7 +25,7 @@ Work through these gates in order. A gate is complete when its answer is clear e
 3. **Boundaries:** Identify at least two must-haves and one explicit out-of-scope item. Ask for each separately; do not fill gaps with assumptions.
 4. **Success:** Define one observable result that would show the idea is working.
 
-Do not present the finished charter until all four gates are clear. Once they are, briefly confirm that shaping is complete and provide the charter in the following Markdown layout. Return it in the conversation so the user can carry it into the `drill-down` skill; do not create a file unless asked.
+Do not present the finished charter until all four gates are clear. Once they are, briefly confirm that shaping is complete and provide the charter in the following Markdown layout. Return it in the conversation so the user can carry it into the `discovery` skill; do not create a file unless asked.
 
 ## Product Charter template
 

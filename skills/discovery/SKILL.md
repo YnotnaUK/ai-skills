@@ -1,11 +1,11 @@
 ---
-name: drill-down
-description: Leads product and project discovery through adaptive, decision-tree questions, then produces a concise discovery brief with assumptions, risks, and feasibility investigations. Use when exploring an idea, assessing what needs to be learned, or preparing a hand-off for deeper specification.
+name: discovery
+description: Leads high-level product and project discovery through adaptive, decision-tree questions, then produces a discovery brief that identifies assumptions, risks, and areas needing focused deep dives before requirements or specifications. Use when exploring an idea or deciding what needs further investigation.
 ---
 
-# Drill down from an idea to a discovery brief
+# Discover an idea and identify what needs deeper investigation
 
-Help the user clarify an idea and determine what must be learned before committing to a solution. This skill is an early-discovery hand-off, not a production requirements specification or task generator. It can follow the `shape` skill, but does not require it.
+Help the user clarify an idea, its intended outcome, and what must be learned before committing to a solution. This skill covers high-level discovery and identifies where focused deep dives are needed; it is not itself a deep-dive workflow, production requirements specification, or task generator. It can follow the `shape` skill, but does not require it.
 
 ## Find the starting point
 
@@ -26,17 +26,17 @@ Run discovery as an adaptive decision tree, in rounds:
 2. Ask the whole current frontier in one round. Number each question, give a clear recommendation, and phrase it so “yes” accepts that recommendation. Do not ask a question whose answer depends on another unresolved question in the same round.
 3. Wait for the user's answers. Update the tree, record settled decisions, and ask the next frontier. Do not ask again for settled information.
 4. Find relevant facts in available conversation or repository context before asking the user. Distinguish evidence from assumptions; include a source when useful. Ask the user for decisions, preferences, and facts that cannot be verified from context.
-5. Begin with the opportunity, audience, problem, and desired outcome. Explore lower-level user flows, behaviours, constraints, integrations, or technical considerations only when they materially affect scope or feasibility. Combine levels in one round when their questions are independent.
-6. Keep the conversation focused on material decisions. Capture unresolved but non-blocking matters as open questions or investigations rather than forcing guesses or exhaustive detail.
+5. Begin with the opportunity, audience, problem, and desired outcome. Map the major areas that affect scope, value, or feasibility. Do not conduct detailed exploration of each area here.
+6. Identify which unanswered questions merit a focused deep dive because their answers could materially change the solution, scope, risk, or feasibility. For each, record why it matters and what needs to be established. Capture lower-impact unknowns as open questions or investigations without forcing decisions.
 7. When the material decisions are covered, give a concise recap and ask the user to confirm the shared understanding. Incorporate corrections before producing the final brief.
 
 Keep each round concise. Use plain language, explain unfamiliar terms when needed, and avoid presenting a menu of speculative options when one recommendation with a clear alternative is enough.
 
 ## Completion
 
-Discovery is ready to hand off when the opportunity and intended outcome are clear, important boundaries and constraints are captured, and remaining feasibility uncertainties are explicit as investigations. Do not claim that an idea is feasible unless the available evidence supports that conclusion.
+Discovery is ready to hand off when the opportunity and intended outcome are clear, important boundaries and constraints are captured, and areas needing focused investigation are prioritised with a reason and a clear question or evidence need. Do not claim that an idea is feasible unless the available evidence supports that conclusion.
 
-After the user confirms the recap, return the brief below in the conversation as Markdown. Do not create or edit files, generate a full production specification, or create tickets unless the user asks.
+After the user confirms the recap, return the brief below in the conversation as Markdown. Do not conduct the listed deep dives, create or edit files, generate a full production specification, or create tickets unless the user asks.
 
 ## Discovery brief template
 
@@ -72,12 +72,18 @@ Use this structure. Omit a section only when it is genuinely not applicable; mar
 ## Open decisions
 - [Decision still needed — why it matters]
 
-## Feasibility investigations
-- [What to investigate — why it matters and what evidence would resolve it]
+## Recommended deep dives
+- **Question or area:** [What needs focused investigation]
+  - **Why it matters:** [How the answer could affect the idea]
+  - **What to establish:** [Decision, evidence, or facts the deep dive should produce]
+  - **Priority:** [High, medium, or low]
+
+## Other open questions
+- [Unresolved question — why it matters, if known]
 
 ## Risks
 - [Risk — potential impact or mitigation to explore]
 
 ## Handoff
-[Suggested next discovery or specification step. Do not create implementation tickets here.]
+[Suggested next step: conduct the priority deep dives, update this brief with findings, then move to requirements/specification when material uncertainties are resolved. Do not create implementation tickets here.]
 ```
