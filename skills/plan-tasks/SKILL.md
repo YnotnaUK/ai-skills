@@ -42,4 +42,4 @@ For GitHub Issues or Jira:
 
 After review, use [the task plan template](./references/task-plan.md) to return the plan in chat or to structure local task files as appropriate. Do not create tasks until the user has approved the proposed set.
 
-After implementation, recommend `review-task` to assess the delivered work against the task and its acceptance criteria before user acceptance.
+Recommend `implement-task` to deliver an agreed task, check its dependencies, and collect validation evidence. After implementation, recommend `review-task` to assess the delivered work against the task and its acceptance criteria before user acceptance.

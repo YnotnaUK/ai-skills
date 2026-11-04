@@ -56,10 +56,17 @@ GitHub Issues requires a separately identified GitHub repository.
 
 ## Workflow
 
-Shape (optional) → Discovery → Deep Dive (if needed) → Specify → Plan Tasks.
-After implementation, use `review-task` to check acceptance criteria and linked
-requirements. Reviews are read-only and returned in chat by default; they do not
-fix work or close tickets.
+Shape (optional) → Discovery → Deep Dive (if needed) → Specify → Plan Tasks →
+Implement Task → Review Task.
+
+Use `implement-task` to deliver an agreed local Markdown task, GitHub Issue, or
+Jira ticket. It checks dependencies, agrees an approach before editing, implements
+within scope, and validates acceptance criteria with evidence for review. It does
+not automatically commit changes, update tickets, or declare the work accepted.
+
+Use `review-task` to check acceptance criteria and linked requirements after
+implementation. Reviews are read-only and returned in chat by default; they do
+not fix work or close tickets.
 
 ### Stage closure
 
@@ -93,7 +100,7 @@ docker run --rm -it ai-skills-test
 npx skills add YnotnaUK/ai-skills
 ```
 
-The check lists published skills, installs all seven for Claude Code, and verifies
+The check lists published skills, installs all eight for Claude Code, and verifies
 their instruction files and reference templates. It tests the public GitHub
 version, so push local changes first. It does not test agent behaviour.
 
