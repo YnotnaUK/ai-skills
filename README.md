@@ -44,7 +44,15 @@ folders you installed from this repository, preserving any local customisations.
 ### Configure your project
 
 After either installation method, invoke `setup-ynotna-skills` in your agent to
-configure repository preferences. Setup does not run automatically.
+configure project preferences. Setup does not run automatically.
+
+Git is optional. If the folder is not in a Git repository, setup offers to
+initialise one with your explicit permission, continue without Git, or cancel.
+Initialising only runs `git init`; it does not stage files, commit, add a remote,
+or publish anything. If the folder is inside an existing repository, setup asks
+whether to configure its root or only that folder rather than creating a nested
+repository. Without Git, guidance and local planning documents still work;
+GitHub Issues requires a separately identified GitHub repository.
 
 ## Workflow
 
