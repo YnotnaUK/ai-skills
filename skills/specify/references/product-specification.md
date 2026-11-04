@@ -1,6 +1,6 @@
 # Product Specification template
 
-Use this structure for the completed specification. Omit a section only when it is not applicable. Mark unknowns and assumptions explicitly, and do not present proposals as approved requirements.
+Use this structure for the specification. Omit a section only when it is not applicable; always include the closure record. Mark unknowns and assumptions explicitly, and do not present proposals as approved requirements. Material unresolved decisions require Provisional status and an explicit user request for that provisional output.
 
 ```markdown
 # Product Specification: [Working Title]
@@ -61,6 +61,15 @@ Use this structure for the completed specification. Omit a section only when it 
 ## Validation and success measures
 - [How the intended outcome and key requirements will be checked]
 
+## Closure and shared understanding
+| Question/branch ID (parent if any) | Outcome | Answer/decision and evidence | Deferral reason, next step, and blocks |
+| --- | --- | --- | --- |
+| [Inherited or new question, including follow-ups] | [Resolved / Excluded / Deferred / Open] | [Answer/source, user-agreed disposition, or unanswered gap] | [Details and affected requirement IDs, or None] |
+
+- **Confirmation:** [User confirmation of the recap, exclusions, deferrals, readiness, and next step; explicit request if provisional]
+- **Progression blockers:** [Unresolved material decisions and affected scope, or None]
+- **Closure rule:** [Open branches require Provisional status, not Ready for review; do not invent agreement to defer]
+
 ## Handoff
-[Review and approve this specification, then use `plan-tasks` to create the implementation breakdown. Do not put implementation tasks here.]
+[If Ready for review, review and approve this specification before using `plan-tasks`. If Provisional, resolve the identified blockers before implementation planning; a provisional task plan requires an explicit request. Do not put implementation tasks here.]
 ```

@@ -34,6 +34,14 @@ Use this structure for the completed review. Include every acceptance criterion,
 ## Remaining uncertainty
 - [Unverified outcome and the evidence needed to resolve it]
 
+## Closure and shared understanding
+| Question/branch ID (parent if any) | Outcome | Answer/decision and evidence | Deferral reason, next step, and blocks |
+| --- | --- | --- | --- |
+| [Task-relevant question, including follow-ups] | [Resolved / Excluded / Deferred] | [Answer/source or user-agreed disposition] | [Required rework or evidence, affected criteria, or None] |
+
+- **Confirmation:** [User confirmation of the assessment and next steps, not task acceptance]
+- **Acceptance blockers:** [Unmet criteria, material defects, or missing verification evidence, or None; agreement to defer does not remove these blockers]
+
 ## Handoff
 [User acceptance, specific rework and re-review, or additional verification needed. Do not imply that the task has been closed or accepted.]
 ```

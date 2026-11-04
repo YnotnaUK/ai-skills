@@ -61,6 +61,21 @@ After implementation, use `review-task` to check acceptance criteria and linked
 requirements. Reviews are read-only and returned in chat by default; they do not
 fix work or close tickets.
 
+### Stage closure
+
+Each skill tracks relevant questions and follow-up branches rather than treating
+every reply as a complete answer. Before hand-off, it checks for missing answers,
+contradictions, and newly opened branches, then asks you to confirm a concise
+closure checklist and shared understanding.
+
+Each branch must be resolved, explicitly excluded, or explicitly deferred with
+your agreement. Deferrals record why, the next step, and what they block; they
+are not treated as answers. Discovery can hand agreed investigations to Deep
+Dive, but unresolved material blockers prevent downstream readiness. Provisional
+specifications and task plans require an explicit request. A completed review
+can report defects or missing evidence without implying acceptance. Setup
+confirms its closure checklist and change plan before editing guidance.
+
 ## Test installation with Docker
 
 Requires Docker, not a local Node.js installation. Build the image and run the

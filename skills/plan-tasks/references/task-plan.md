@@ -7,7 +7,7 @@ Use this structure when presenting a task plan for review or recording tasks in 
 
 - **Source specification:** [Title/path and status]
 - **Destination:** [Chat / local Markdown path / GitHub repository / Jira project]
-- **Status:** [Proposed / Approved / Partially created]
+- **Status:** [Provisional / Proposed / Approved / Partially created]
 
 ## Summary
 [Briefly describe the implementation outcome and task grouping.]
@@ -27,4 +27,13 @@ Use this structure when presenting a task plan for review or recording tasks in 
 ## Coverage check
 - [Requirement IDs covered by the tasks]
 - [Requirements intentionally not tasked and why]
+
+## Closure and shared understanding
+| Question/branch ID (parent if any) | Outcome | Answer/decision and evidence | Deferral reason, next step, and blocks |
+| --- | --- | --- | --- |
+| [Inherited or new question, including follow-ups] | [Resolved / Excluded / Deferred / Open] | [Answer/source, user-agreed disposition, or unanswered gap] | [Details and affected task/requirement IDs, or None] |
+
+- **Confirmation:** [Pending during proposal; record actual user confirmation of the whole plan, exclusions, deferrals, and destination after review]
+- **Publication blockers:** [Tasks that cannot be published and why, or None; a provisional plan requires an explicit request]
+- **Closure rule:** [Open branches prevent approval and publication of affected tasks; do not invent agreement to defer]
 ```

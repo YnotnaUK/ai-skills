@@ -1,9 +1,11 @@
 # Deep-dive report template
 
-Use this structure for the completed investigation. Include a section for each area investigated. Omit a section only when it is not applicable; do not turn an assumption or unknown into a fact.
+Use this structure for the investigation hand-off, including a blocked investigation. Include a section for each area investigated and always include the closure record. Omit other sections only when they are not applicable; do not turn an assumption or unknown into a fact. Reconcile remaining questions with explicit deferrals and blockers.
 
 ```markdown
 # Deep-dive Findings: [Working Title]
+
+- **Status:** [Complete / Blocked — identify unresolved material investigation questions]
 
 ## Summary
 [What was investigated and the overall result.]
@@ -28,6 +30,15 @@ Use this structure for the completed investigation. Include a section for each a
 ## Risks
 - [Risk and its likely impact]
 
+## Closure and shared understanding
+| Question/branch ID (parent if any) | Outcome | Answer/decision and evidence | Deferral reason, next step, and blocks |
+| --- | --- | --- | --- |
+| [Tracked question, including follow-ups] | [Resolved / Excluded / Deferred / Open] | [Answer/source, user-agreed disposition, or unanswered gap] | [Evidence or decision needed, next step, affected scope, or None] |
+
+- **Confirmation:** [User confirmation of findings, implications, exclusions, deferrals, and proposed next step]
+- **Progression blockers:** [Material unresolved uncertainties and what they prevent, or None]
+- **Closure rule:** [Open branches mean the investigation is Blocked, not Complete; do not invent agreement to defer]
+
 ## Handoff
-[Recommend another focused investigation or, when material uncertainties are resolved, using `specify` to create the Product Specification.]
+[Recommend another focused investigation or, when no deferred material uncertainty blocks the proposed scope, using `specify` to create the Product Specification. Do not equate an agreed deferral with a resolved uncertainty.]
 ```

@@ -19,4 +19,11 @@ Use this exact layout for the completed charter:
 
 ### 3. Metric for Success
 * **The Goal:** [The clear, observable outcome that defines a win]
+
+### 4. Closure and shared understanding
+| Question/branch ID (parent if any) | Outcome | Answer/decision and evidence | Deferral reason, next step, and blocks |
+| --- | --- | --- | --- |
+| [Tracked question, including follow-ups] | [Resolved / Excluded / Deferred] | [Answer/source or user-agreed disposition] | [Details, or None] |
+
+* **Confirmation:** [User confirmation of the recap, exclusions, deferrals, and readiness for Discovery; all four shaping gates must be clear]
 ```

@@ -23,6 +23,14 @@ Assess whether the produced work meets the agreed expectations. This is a task-f
 5. Distinguish observed defects from assumptions, pre-existing issues, and verification limits. Report failed or unavailable checks explicitly; do not claim tests were run or behaviour was verified when it was not.
 6. Review the assessment for complete criterion coverage and evidence-backed findings. Recommend **Ready for acceptance** only when all criteria are met and no material task-related defects remain. Recommend **Changes required** when criteria are not met or material defects are found. If there are no demonstrated defects but required evidence is missing, report **Unable to verify** rather than approving the task.
 
+## Closure and shared understanding
+
+Track every task-relevant question and follow-up branch with a stable identifier and its parent where applicable, recording the answer or decision and evidence. Carry forward relevant branch identifiers and outcomes from the task and linked requirements; reassess deferred items rather than dropping or silently resolving them. Partial, ambiguous, skipped, or contradictory answers stay **Open**. Check all criteria and branches for unanswered follow-ups and contradictions; do not invent unrelated branches.
+
+Account for each branch as **Resolved**, **Excluded**, or **Deferred**. Exclusions require the user's agreement and must not remove acceptance criteria without an explicit baseline change. Deferrals require the user's agreement, a reason, the evidence or decision needed, a next step, and what they block. A review may finish with defects or verification gaps documented; those gaps still block **Ready for acceptance**, even if the user agrees to defer them.
+
+Present the assessment and a concise closure checklist, including branch outcomes, evidence, boundaries, rework, and verification blockers. Surface failures immediately; do not withhold findings while waiting for confirmation. Ask the user to confirm the shared understanding of the assessment and next steps, then wait before finalising the hand-off. Silence, partial replies, or agreement with individual findings is not confirmation of the whole assessment. Incorporate corrections, revisit affected criteria and branches, and confirm again if the assessment changes. Do not reopen unaffected settled decisions. User agreement cannot replace missing verification evidence.
+
 ## Report and hand-off
 
 Read [the task review template](./references/task-review.md) only when ready to produce the report. Return it in the conversation by default.

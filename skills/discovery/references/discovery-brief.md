@@ -1,6 +1,6 @@
 # Discovery Brief template
 
-Use this structure for the completed discovery brief. Omit a section only when it is genuinely not applicable; mark missing or uncertain information as unknown rather than inventing it.
+Use this structure for the completed discovery brief. Omit a section only when it is genuinely not applicable; always include the closure record. Mark missing or uncertain information as unknown rather than inventing it. Reconcile open decisions and investigations with the tracked branches; do not list unagreed deferrals as completed discovery.
 
 ```markdown
 # Discovery Brief: [Working Title]
@@ -43,6 +43,14 @@ Use this structure for the completed discovery brief. Omit a section only when i
 
 ## Risks
 - [Risk — potential impact or mitigation to explore]
+
+## Closure and shared understanding
+| Question/branch ID (parent if any) | Outcome | Answer/decision and evidence | Deferral reason, next step, and blocks |
+| --- | --- | --- | --- |
+| [Tracked question, including follow-ups] | [Resolved / Excluded / Deferred] | [Answer/source or user-agreed disposition] | [Details, including linked deep dive where applicable, or None] |
+
+- **Confirmation:** [User confirmation of the recap, exclusions, deferrals, and proposed next step]
+- **Readiness:** [Discovery complete; agreed investigations and any downstream blockers remain explicit]
 
 ## Handoff
 [Suggested next step: use the `deep-dive` skill for the recommended investigations. When material uncertainties are resolved—or there are no deep dives needed—use `specify` to create the Product Specification. Do not create implementation tickets here.]

@@ -17,14 +17,18 @@ Turn an agreed Product Specification into a coherent, appropriately sized set of
 
 ## Build the task plan
 
-1. Extract requirements, acceptance criteria, constraints, dependencies, and exclusions from the specification. Map each task to one or more requirement IDs; preserve traceability.
-2. Identify any missing implementation decisions that materially affect the task breakdown. Find repository facts before asking the user. Ask focused questions with recommendations in numbered rounds when needed; do not ask about details already settled in the spec.
+1. Extract requirements, acceptance criteria, constraints, dependencies, and exclusions from the specification. Map each task to one or more requirement IDs; preserve traceability. Carry forward relevant branch identifiers and outcomes; reassess deferred items against this stage's gate rather than dropping or silently resolving them.
+2. Identify any missing implementation decisions that materially affect the task breakdown. Find repository facts before asking the user. Track every relevant question and follow-up branch with a stable identifier and its parent where applicable, recording answers, decisions, and evidence. Ask focused questions with recommendations in numbered rounds when needed, holding dependent questions for later rounds. Partial, ambiguous, skipped, or contradictory answers stay open; do not ask about details already settled in the spec unless new evidence changes them.
 3. Group work into small, independently understandable tasks that deliver verifiable progress. Order tasks by actual dependency, not merely by preference. Record dependencies explicitly and avoid circular dependencies.
 4. Give each task a clear outcome, actionable description, testable acceptance criteria, relevant requirement references, and dependencies where applicable. Include testing, documentation, migration, accessibility, security, or operational work only when required by the specification.
 5. Do not invent estimates, assignees, labels, deadlines, architectural decisions, or scope. Include them only when provided or requested; state blockers rather than disguising them as tasks.
 6. Review the complete plan for coverage, duplicates, oversized tasks, missing dependencies, and work outside scope. If the task set is too large to be useful, propose sensible phases and keep the first batch focused.
 
 ## Review and publish
+
+Audit every requirement, task dependency, inherited blocker, and tracked branch, including follow-ups opened by earlier answers. Each branch must be **Resolved**, **Excluded**, or **Deferred**; an unanswered question remains **Open**. Exclusions require the user's agreement and must not silently drop specification requirements. Deferrals require the user's agreement, a reason, a next step, and the tasks or progression they block. Do not publish affected tasks or mark a provisional plan ready while material blockers remain.
+
+Include a concise closure checklist with the proposed plan: branch outcomes, evidence or decisions, coverage, boundaries, deferrals, and blockers. Ask the user to confirm the shared understanding and proposed task set, then wait. Silence, partial replies, or approval of individual answers is not approval of the whole plan. Incorporate corrections, revisit affected branches and dependencies, and confirm again if the plan changes. Do not reopen unaffected settled decisions or invent unrelated branches.
 
 Present the proposed plan for review before creating or modifying task records. Respect the configured output and external-action policy; when none is clear, return the plan in chat and ask before creating files or external tickets.
 

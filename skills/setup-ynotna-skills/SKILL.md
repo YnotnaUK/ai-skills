@@ -36,7 +36,7 @@ Ask for any preferences that are not already established by existing guidance. T
 * **Task destination:** local Markdown, GitHub Issues, or Jira as the default. Record relevant non-secret identifiers only when useful and verified or user-provided. Do not store credentials.
 * **External actions:** whether to ask before creating or modifying GitHub/Jira issues. Recommend explicit confirmation before external side effects.
 
-Present sensible defaults and ask the user to accept or adjust them, rather than asking open-ended setup questions. If a preference is declined or left undecided, record it as “ask each time”; do not assume the recommendation was accepted. The user may select only one default task destination; other supported services can remain available as alternatives. The `plan-tasks` skill should present a task plan for review before publishing it.
+Present sensible defaults and ask the user to accept or adjust them, rather than asking open-ended setup questions. If a preference is declined or left undecided, propose “ask each time” and obtain confirmation before recording it; do not assume the recommendation was accepted. The user may select only one default task destination; other supported services can remain available as alternatives. The `plan-tasks` skill should present a task plan for review before publishing it.
 
 ## Verify task-service access
 
@@ -50,6 +50,14 @@ Report tool availability, authentication status, and target access as separate r
 
 Verification is only evidence for the current environment and session; do not persist a claim that access is available in repository instructions. Recheck when a later skill is about to publish tasks.
 
+## Closure and shared understanding
+
+Throughout setup, track every relevant question and follow-up branch with a stable identifier and its parent where applicable, recording choices, evidence, and permissions separately. Partial, ambiguous, skipped, or contradictory answers stay **Open**. Check the setup root, Git choice, instruction entry points, artefact policies, destinations, and service-check outcomes for unanswered follow-ups or conflicts.
+
+Before applying changes, account for each branch as **Resolved**, **Excluded**, or **Deferred**. Exclusions require the user's agreement. Deferrals require the user's agreement, a reason, a next step, and what they block; “ask each time” is a resolved policy only when the user explicitly chooses it. Do not edit through unresolved instruction conflicts, missing permissions, or an uncertain setup root.
+
+Present a concise closure checklist alongside the change plan: choices and evidence, agreed boundaries, skipped checks, deferrals, and blockers. Ask the user to confirm the shared understanding and approve the exact proposed changes, then wait. Silence, partial replies, or approval of individual choices is not approval of the whole plan. Incorporate corrections, revisit affected branches, and confirm again if the plan changes. Do not reopen unaffected settled decisions or invent unrelated branches.
+
 ## Prepare and apply changes safely
 
 1. Read [the repository guidance reference](./references/repository-guidance.md) for the guidance section format.
@@ -60,4 +68,4 @@ Verification is only evidence for the current environment and session; do not pe
 
 ## Verify and report
 
-Verify the canonical guidance, managed section, and any symlink target. If Git is available and the folder belongs to a repository, check the diff for whitespace problems. Report the setup root, whether Git was existing, initialised, or not used, the chosen policies, files changed, task-service access-check results (or that the user declined), unresolved conflicts, and manual steps. Do not claim a repository, link, or integration works unless verified.
+Verify the canonical guidance, managed section, and any symlink target. If Git is available and the folder belongs to a repository, check the diff for whitespace problems. Report the setup root, whether Git was existing, initialised, or not used, the chosen policies, files changed, task-service access-check results (or that the user declined), unresolved conflicts, and manual steps. Include the closure record using the reporting format in the reference; do not persist session-specific questions or verification claims in repository guidance. If verification opens a new branch, surface it and agree its resolution or explicit deferral before declaring setup complete. Do not claim a repository, link, or integration works unless verified.
